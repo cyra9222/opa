@@ -1,0 +1,246 @@
+$box-width: 1099px;
+$box-radius: 10px;
+$box-margin: 75px;
+$base-color: #0076be;
+$inputheight: 70px;
+$secondcolour: #afacac;
+body {
+  font-family: 'Lato', sans-serif;
+}
+h2 {
+  font-weight: 700;
+}
+.header {
+  width: 100%;
+  background-color: rgb(239, 246, 254);
+  padding-top: 30px;
+  padding-left: 84.5px;
+  padding-right: 84.5px;
+  height: 250px;
+  .navinfo {
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 200px;
+      border-radius: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      padding: 20px;
+      font-size: 18px;
+      color: rgb(50, 50, 50);
+      &:hover {
+        color: $secondcolour;
+      }
+    }
+    .k {
+      display: flex;
+      padding-left: 550px;
+    }
+  }
+}
+.box {
+  width: 100%;
+  margin-top: $box-margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .top {
+    height: 216px;
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    .buttons {
+      padding-right: 157px;
+      .no {
+        margin-left: 22px;
+      }
+    }
+    p {
+      padding-left: 590px;
+    }
+  }
+}
+
+button {
+  width: 74px;
+  height: 48px;
+  padding: 12px, 22px, 12px, 22px;
+  border: 2px solid $base-color;
+  color: $base-color;
+  border-radius: 10px;
+  background-color: white;
+  font-size: larger;
+  &:hover {
+    background-color: $base-color;
+    color: white;
+  }
+}
+.driverinfo {
+  margin-top: $box-margin;
+  padding-left: 42px;
+  padding-top: 34px;
+  height: 957px;
+  h2 {
+    font-size: 32px;
+  }
+  label {
+    margin-top: 54px;
+    margin-right: 200px;
+    font-size: 24px;
+  }
+  form {
+    #fullname {
+      width: 408px;
+      height: $inputheight;
+    }
+    .dobinfo {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      .dob {
+        width: 65px;
+        height: $inputheight;
+      }
+    }
+    .genderinfo {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      .gender {
+        width: 135px;
+        height: $inputheight;
+        background-color: white;
+        &:hover {
+          background-color: $base-color;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.morecarinfo {
+  padding-left: 42px;
+  padding-right: 100px;
+  margin-top: $box-margin;
+  .row1 {
+    display: flex;
+    justify-content: space-between;
+    color: $secondcolour;
+  }
+  #address {
+    width: 350px;
+  }
+}
+.email {
+  padding-left: 42px;
+  margin-top: $box-margin;
+  #email {
+    width: 350px;
+  }
+}
+.center {
+  margin-top: $box-margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .carinfo {
+    border: 1px black solid;
+    border-radius: $box-radius;
+    width: $box-width;
+
+    .use {
+      height: 213px;
+      width: 243.57003784179688px;
+      left: 982.630859375px;
+      top: 1807px;
+      border-radius: 30px;
+      font-size: 30px;
+      font-weight: 700;
+      .plan {
+        font-size: 40px;
+      }
+    }
+    .seperate {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 75px;
+      margin-right: 75px;
+    }
+  }
+}
+input {
+  border: 2px solid $base-color;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+  height: $inputheight;
+}
+.boxed {
+  padding-top: 64px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  border: 1px black solid;
+  border-radius: $box-radius;
+  width: $box-width;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.grey {
+  color: $secondcolour;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.progressbar {
+  display: flex;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .line {
+    flex-direction: row;
+    background-color: rgb(192, 192, 192);
+    width: 50%;
+    border-radius: 15px;
+    .now {
+      background-color: $base-color;
+      color: white;
+      padding: 1%;
+      text-align: right;
+      font-size: 20px;
+      border-radius: 15px;
+    }
+    .length {
+      width: 35%;
+    }
+  }
+  .progress {
+    flex-direction: row;
+    gap: 190px;
+    background-color: rgb(239, 246, 254);
+    .font {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1rem;
+      &:hover {
+        color: $secondcolour;
+      }
+    }
+  }
+}
+.quote {
+  width: 400px;
+}
+.submit {
+  margin-bottom: 50px;
+}
