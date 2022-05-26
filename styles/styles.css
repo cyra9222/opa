@@ -4,6 +4,7 @@ body {
 
 h2 {
   font-weight: 700;
+  font-size: 2rem;
 }
 
 .header {
@@ -37,19 +38,12 @@ h2 {
 .header .navinfo a {
   text-decoration: none;
   padding: 20px;
-  font-size: 18px;
+  font-size: 1rem;
   color: #323232;
 }
 
 .header .navinfo a:hover {
   color: #afacac;
-}
-
-.header .navinfo .k {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-left: 550px;
 }
 
 .box {
@@ -84,7 +78,7 @@ h2 {
 }
 
 .box .top h1 {
-  font-size: 30px;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 
@@ -120,17 +114,12 @@ button:hover {
   margin-top: 75px;
   padding-left: 42px;
   padding-top: 34px;
-  height: 957px;
-}
-
-.driverinfo h2 {
-  font-size: 32px;
 }
 
 .driverinfo label {
   margin-top: 54px;
   margin-right: 200px;
-  font-size: 24px;
+  font-size: 1.7rem;
 }
 
 .driverinfo form #fullname {
@@ -222,7 +211,6 @@ button:hover {
 .center .carinfo {
   border: 1px black solid;
   border-radius: 10px;
-  width: 1099px;
 }
 
 .center .carinfo .use {
@@ -231,12 +219,12 @@ button:hover {
   left: 982.630859375px;
   top: 1807px;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .center .carinfo .use .plan {
-  font-size: 40px;
+  font-size: 3rem;
 }
 
 .center .carinfo .seperate {
@@ -263,21 +251,22 @@ input {
   height: 70px;
 }
 
+.grey {
+  color: #afacac;
+  font-size: 1.7rem;
+  padding-top: 20px;
+}
+
 .boxed {
   padding-top: 64px;
   padding-bottom: 30px;
   padding-left: 40px;
+  padding-right: 40px;
   border: 1px black solid;
   border-radius: 10px;
-  width: 1099px;
+  width: 70%;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.grey {
-  color: #afacac;
-  font-size: 20px;
-  padding-top: 20px;
 }
 
 .progressbar {
@@ -295,6 +284,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .progressbar .line {
@@ -309,15 +299,13 @@ input {
 
 .progressbar .line .now {
   background-color: #0076be;
-  color: white;
   padding: 1%;
   text-align: right;
-  font-size: 20px;
   border-radius: 15px;
 }
 
 .progressbar .line .length {
-  width: 35%;
+  width: 40%;
 }
 
 .progressbar .progress {
@@ -325,12 +313,13 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 190px;
   background-color: #eff6fe;
+  width: 50%;
+  gap: 19%;
 }
 
 .progressbar .progress .font {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 800;
   line-height: 1rem;
 }
@@ -345,5 +334,9 @@ input {
 
 .submit {
   margin-bottom: 50px;
+}
+
+i {
+  padding-right: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
